@@ -5,7 +5,7 @@ app.use(express.static('public2'));
 
 app.set("view engine","ejs");
 
-app.listen(3000,function(){console.log("helloworld");});
+app.listen(process.env.PORT||3000,function(){console.log("helloworld");});
 app.get("/",function(req,res){
 // res.sendFile("C:\\Users\\MSI\\baradie\\ind.html");
 res.render("test",{im:"/BedRoom.jpg"})
