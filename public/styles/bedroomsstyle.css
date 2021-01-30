@@ -1,0 +1,199 @@
+body{
+background-color: #333;
+text-align: center;
+/* background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("file:///C:/Users/MSI/Documents/web-development/training/images/blackimage.jpg"); */
+height: 100%;
+}
+.carousel-inner{
+padding: 10%;
+
+}
+
+
+@media (max-width:1200px) {
+  table {
+    border-collapse: separate;
+    border-spacing: 100px 30px;
+}
+
+}
+
+#bedrooms{
+  text-align: center;
+  font-size: 8vw;
+color: white;
+padding-bottom: 10rem;
+padding-top: 1em;
+
+}
+#bedrooms h1 { font-family: "Lucida Bright", Georgia, serif;  font-style: normal; font-variant: normal; font-weight: 400;  font-size: 8vw;    display: block;color: white;}
+h1.model  { font-family: "Lucida Bright", Georgia, serif;  font-style: normal; font-variant: normal; font-weight: 600;   font-size: 6vw; }
+ img#mainIcon {
+margin-top: 30px;
+
+}
+
+
+
+
+h2{
+  font-family: 'Kufam', cursive;
+  text-shadow: 1px 2px;
+
+}
+li img{
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin: 20px;
+}
+.col img{ width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 20px;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.hoverimage img {
+  /* width: 200px;
+  height: 200px; */
+  opacity: 0.6;
+  cursor: pointer;
+  /* width: 100%; */
+}
+
+.hoverimage img:hover {
+  opacity: 1;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.scroller{
+  white-space: nowrap;
+
+overflow: auto;
+}
+
+
+
+::-webkit-scrollbar {
+/* display: none; */
+}
+
+You
+.img{
+  display:inline;
+}
+/* #horiz_container_outer{
+overflow-y: scroll;
+  width: 60%;
+
+} */
+
+table {
+  border-collapse: separate;
+  border-spacing: 30px 30px;
+width: 100%;
+}
+table p{
+margin: 0px;
+
+}
+
+@media (max-width:1200px) {
+  table {
+    border-collapse: separate;
+    border-spacing: 100px 30px;
+}
+
+}
+.u-btn-1 {
+   background-image: none;
+   text-transform: uppercase;
+   font-size: 0.875rem;
+   letter-spacing: 2px;
+}
+.u-button-style.u-palette-3-base, .u-button-style.u-palette-3-base[class*="u-border-"] {
+    color: #ffffff !important;
+    background-color: #5a7670 !important;
+}
+
+.u-button-style[class*="u-custom-color-"], .u-button-style[class*="u-palette-"], .u-button-style[class*="u-gray-"], .u-button-style.u-white, .u-button-style.u-black {
+    border-width: 0;
+}
+
+.u-btn {
+  position: relative;
+    display: -block;
+?    cursor: pointer;
+    color: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    text-decoration: none;
+    border: 0 none transparent;
+    outline-width: 0;
+    background-color: transparent;
+    margin: 0;
+    -webkit-text-decoration-skip: objects;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 3%;
+    align-self: flex-start;
+}

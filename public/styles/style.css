@@ -1,0 +1,511 @@
+
+
+body{
+      font-family: gotham,"Helvetica Neue",sans-serif;
+width: 100%;
+height: 100%;
+text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("/images/blackimage.jpg");
+}
+img[class="home"]{
+width: 60%;
+}
+
+img{
+  width: 100%;
+}
+@keyframes navbaranimation {
+  from {
+    margin-left: 100%;
+    /* width: 120%; */
+  }
+
+  to {
+    margin-left: 0%;
+    /* width: 100%; */
+  }
+}
+
+
+
+.navbar{
+  animation-duration: 3s;
+  animation-name: navbaranimation;
+  animation-direction: alternate;
+
+position: fixed;
+width: 100%;
+z-index: 100;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .rightnav{
+
+  animation-duration: 3s;
+  animation-name: rightnavanimation;
+  animation-direction:alternate;
+
+}
+
+
+.navbar-toggler{
+padding: .15rem .50rem;
+background-color: rgba(0, 0, 0, 0.5);
+text-align: right;
+
+
+}
+.navbar-toggler:hover{
+background-color: rgba(0, 0, 0, 0.9)
+
+
+}.navbar-toggler-icon{
+width: 50%;
+
+
+}
+.dropdown-item{
+  font-size:10px ;
+
+}
+
+.navbar-brand img{
+
+border-radius: 50%;
+width: 50px;
+}
+
+hr{
+  display: block;
+border-style: dotted;
+
+width: 50px;
+height: 2px;
+
+border-color: #797a7e;
+border-width: 5px 0px 0px 0px;
+margin-top: 1rem;
+}
+
+
+@keyframes rightnavanimation {
+  from {
+
+opacity: 1;
+color: black;
+        /* width: 120%; */
+  }
+
+  to {
+    opacity: 0.3;
+    color: white;
+
+    /* width: 100%; */
+  }
+}
+a{
+
+  color: white;
+  border-radius:1rem;
+text-shadow: white;
+}
+.carousel{
+padding: 10rem;
+width: 90%;
+text-align: center;
+/* padding: auto; */
+margin: auto;
+}
+.carousel-inner > .item {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  display: block;
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: opacity 5s ease;
+       -o-transition: opacity 5s ease;
+          transition: opacity 5s ease;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+          transform: translate3d(0, 0, 0) !important;
+}
+.carousel-inner > .item:first-of-type {
+  position: relative;
+}
+.carousel-inner > .active {
+  opacity: 1;
+  z-index: 3;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  -webkit-transition: opacity 0.6s ease-in-out;
+       -o-transition: opacity 0.6s ease-in-out;
+          transition: opacity 0.6s ease-in-out;
+  opacity: 1;
+  left: 0;
+  z-index: 2;
+}
+.carousel-inner > .active.left,
+.carousel-inner > .active.right {
+  z-index: 1;
+}
+.carousel-control {
+  z-index: 4;
+}
+.home{
+
+padding: 0px;
+padding-top:  20px;
+
+background-color: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,1));
+background-color: black;
+size: cover;
+width:100%;
+
+}
+
+#super{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('file:///C:/Users/MSI/Documents/web-development/training/images/room.jpg');
+}
+@keyframes whataboutusanimation {
+  from {
+
+opacity: 0.3;
+        /* width: 120%; */
+  }
+
+  to {
+    opacity: 1;
+    /* width: 100%; */
+  }
+}
+
+
+
+#more{
+
+
+width: 100%;
+  background-color:#e3dfc8;
+padding-top: 2em;
+padding-bottom: 2rem;
+/* background: rgba(227, 223, 200, 0.5); */
+
+color: white;
+}
+
+#cnc{
+
+   width: 50%;
+   height: auto;
+  margin: 200px auto 100px;
+  box-sizing: border-box;
+/* display: flex; */
+/* overflow: hidden; */
+/* position: relative; */
+display:inline-block;
+}
+
+@media (max-width:1120px) {
+  #cnc{
+    display: block;
+  }
+}
+
+.cncimg{
+
+  box-sizing: border-box;border-radius: 2%;
+display: block;
+overflow: visible;
+  /* height:30rem;; width:18rem; */
+  float: left;
+height: 350px;
+width: 240px;;
+margin-right: 40px;
+z-index: 10;
+
+}
+.bedrooms{
+  box-sizing: border-box;border-radius: 2%;
+display: block;
+overflow: visible;
+  /* height:30rem;; width:18rem; */
+  float: right;
+/* float: none; */
+height: 350px;
+width: 240px;;
+margin-left: 40px;
+
+
+
+
+
+}
+#cnc h2{
+margin-top:  60px;
+  text-shadow: #000000 1px 0 10px;
+letter-spacing: 0.2em;
+position: relative;
+z-index: 100;
+
+}
+
+.flexmore{background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('file:///C:/Users/MSI/Documents/web-development/training/images/mountain.png');
+}
+
+@media (max-width:731px) {
+
+
+
+.cncimg{
+  box-sizing: border-box;border-radius: 2%;
+display: block;
+text-align:center;
+overflow: visible;
+  /* height:30rem;; width:18rem; */
+  float: none;
+height: 350px;
+width: 100%;;
+margin-right: 0px;
+z-index: 10;
+
+}
+
+
+
+.bedrooms{
+  box-sizing: border-box;border-radius: 2%;
+display: block;
+overflow: visible;
+  /* height:30rem;; width:18rem; */
+  float: none;
+height: 350px;
+width: 100%;;
+margin-left: 0px;
+
+}
+
+}
+#cnc p{
+color: white;
+
+text-shadow:none;
+font-family: sans-serif;
+font-display: block;
+font-weight: bold;
+font-size:1.8em;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+}
+.Whataboutus h1{
+  animation-duration: 3s;
+  animation-name: whataboutusanimation;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+
+}
+.u-btn-1 {
+   background-image: none;
+   text-transform: uppercase;
+   font-size: 0.875rem;
+   letter-spacing: 2px;
+}
+.u-button-style.u-palette-3-base, .u-button-style.u-palette-3-base[class*="u-border-"] {
+    color: #ffffff !important;
+    background-color: #5a7670 !important;
+}
+
+.u-button-style[class*="u-custom-color-"], .u-button-style[class*="u-palette-"], .u-button-style[class*="u-gray-"], .u-button-style.u-white, .u-button-style.u-black {
+    border-width: 0;
+}
+
+.u-btn {
+  position: relative;
+    display: -block;
+?    cursor: pointer;
+    color: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    text-decoration: none;
+    border: 0 none transparent;
+    outline-width: 0;
+    background-color: transparent;
+    margin: 0;
+    -webkit-text-decoration-skip: objects;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 3%;
+    align-self: flex-start;
+}
+
+h1{
+
+  font-size: 4vw;
+}
+
+
+p{
+font-size: 1.5vw;
+
+}
+h2{
+font-size: 3vw;
+
+}
+
+h3
+.Whataboutus{
+
+
+  text-align: center;
+
+  width: 100%;
+  background-size: contain;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-bottom: 5rem;
+        background-color: #ffffff;
+        color: white;
+  background-image :  linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)),  url('file:///C:/Users/MSI/Documents/web-development/training/images/aboutusbackground.jpg');
+  }
+p{
+  text-shadow: #000000 1px 0 10px;
+
+
+}
+
+       span {
+           padding: 10px;
+
+       }
+
+
+       @keyframes carouselanimation {
+         from {
+           margin-left: 10%;
+           /* width: 120%; */
+         }
+
+         to {
+           margin-left: 0%;
+           /* width: 100%; */
+         }
+       }
+h1{
+  animation-duration: 3s;
+  animation-name: carouselanimation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+margin: auto;
+  vertical-align:baseline;
+text-align: center;
+justify-content: center;
+display: flex;
+align-self: center;
+padding-top: 20%;
+color: white;
+}
+.imgleft{
+padding: 10px;
+/* width: 40%; */
+height:700px;
+background-position: center;
+object-fit: cover;
+
+/* border-top-left-radius: 10%;
+border-bottom-left-radius: 10%
+;border-top-right-radius: 20%;
+border-bottom-right-radius: 20%; */
+
+}
+.section-1{
+
+/* background-color:#393b44; */
+background-blend-mode: darken;
+align-items: center;
+text-align: center;
+
+vertical-align: middle;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  align-items: center;
+  padding: 5px;
+
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+
+
+}
+
+.column {
+flex:2;
+  padding: 5px;
+
+}
+
+.column1 {
+flex:1;
+  padding: 5px;
+
+}
+
+.footer-link{
+
+  color: black;
+margin-top: 60px;padding-right: 50px;
+padding-left: 50px;
+
+
+}
+
+a.footer-link:hover{
+ color: white;
+
+}
+.footer p{padding: 0rem;
+
+margin: 0rem;
+position: relative;
+top: 0px;
+bottom: 0px;
+
+}
+.footer{
+  position: relative;
+  color: white;
+  background-color:#e3dfc8;
+  text-align: center;
+  padding :0.7rem;
+  margin-top: 2rem;
+width: 100%;
+}
