@@ -115,7 +115,7 @@ console.log(description);
       })
   })
 
-  sections.push(new Section(typeofsection,"sfsfc",items));
+  sections.push(new Section(typeofsection,"/images/blackimage.jpg",items));
 
       })
 

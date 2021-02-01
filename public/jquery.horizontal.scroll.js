@@ -21,6 +21,9 @@ function displayGallery2(){
 var d=document.getElementById("gallery");
 		d.style.display = "none";
 
+		if (index!==0)
+return;
+
 for (var i=0;i<total_items;i++){
 var s="groub"+i;
 for (var j=0;j<document.getElementsByClassName(s).length;j++)
@@ -36,7 +39,6 @@ document.getElementsByClassName(s)[j].style.display="block";
 
 
 function nextfun(){
-
 
 var d=document.getElementById("gallery");
 	d.style.display = "none";
@@ -55,6 +57,9 @@ document.getElementsByClassName(s)[j].style.display="none";
 var s="groub"+index;
 for (var j=0;j<document.getElementsByClassName(s).length;j++)
 document.getElementsByClassName(s)[j].style.display="block";
+
+var expandImg = document.getElementById("expandedImg");
+expandImg.src = document.getElementsByClassName(s)[0].src;
 
 
 }
@@ -81,7 +86,8 @@ var s="groub"+index;
 for (var j=0;j<document.getElementsByClassName(s).length;j++)
 document.getElementsByClassName(s)[j].style.display="block";
 
-
+var expandImg = document.getElementById("expandedImg");
+expandImg.src = document.getElementsByClassName(s)[0].src;
 }
 
 
