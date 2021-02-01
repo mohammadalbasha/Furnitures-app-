@@ -60,7 +60,7 @@ console.log(backgroundimg);
 <!-- <script type="text/javascript">
 document.body.style.backgroundImage = "url('file:///C:/Users/MSI/baradie/public/images/aboutusbackground.jpg')";
 </script> -->
-<img id="mainIcon"src="\images\icon.png" alt="" width="200px" height="200px">
+<img id="mainIcon"src="\images\icon.png" alt="" loading="lazy"  width="200px" height="200px">
 <section id="bedrooms">
   <h1>شركة البرادعي للمفروشات</h1>
 
@@ -104,7 +104,7 @@ class="carousel-item"
           <div   class="row">
 <div class="col-xl-6 col">
 
-   <img src="<%=sec.items[i].images[0]%>" alt="Lights" onclick="myFunction(this);" onload="initMyFunction(this);" >
+   <img src="<%=sec.items[i].images[0]%>" alt="Lights" loading="lazy"  onclick="myFunction(this);" onload="initMyFunction(this);" >
 
 </div>
 <div class="col-xl-6" style="color:white">
@@ -193,7 +193,7 @@ class="carousel-item"
 	  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
 	  <!-- Expanded image -->
-	  <img id="expandedImg" style="width:70%;height:400px;" >
+	  <img id="expandedImg" loading="lazy"  style="width:70%;height:400px;" >
 
 	  <!-- Image text -->
 	  <div id="imgtext"></div>
@@ -217,7 +217,7 @@ class="carousel-item"
 
           <% for (var j=1;j<sec.items[i].images.length;j++){%>
 <%var cl="groub"+i;%>
-       <li><img src="<%=sec.items[i].images[j]%>" class="slidesimg <%=cl%>"width="250px" style="height:150px;" alt="UP" onload="initMyFunction(this);"/></li>
+       <li><img src="<%=sec.items[i].images[j]%>" class="slidesimg <%=cl%>"width="250px" loading="lazy" style="height:150px;" alt="UP" onload="initMyFunction(this);"/></li>
        <%}%>
 
 
