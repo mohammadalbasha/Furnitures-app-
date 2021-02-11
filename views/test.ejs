@@ -4,8 +4,9 @@
     <meta charset="utf-8">
 
 
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -14,11 +15,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="\styles\style.css">
     <title></title>
+    <link rel="shortcut icon" href="images\icon.ico">
 
   </head>
   <body>
     <script src="\src.js"></script>
-
 
 
 
@@ -75,36 +76,134 @@
 
          <img class="home" src="\images\albaradie-home.png" loading="lazy"   height="700px" alt="">
 
-<img src="\images\albaradie4.jpg" alt="">
+<!-- <img src="\images\albaradie4.jpg" alt=""> -->
+<div class="zright">
+  <img class="zright" src="\images\zakharefright.png" alt="">
+
+</div>
+
+<div class="zleft">
+  <img src="\images\zakharefleft.png" alt="">
+
+</div>
        </section>
 
 
        <section id="newcollection">
 
          <h1>New Collection</h1>
+
          <div id="carouselExampleControls" class="carousel  slide carousel-fade" data-bs-ride="carousel">
            <div class="carousel-inner">
+
+<% for (var i=0;i<newcollection.length;i++) {%>
+  <div
+
+<% if (i===0){%>
+  class="carousel-item active section-1" <%}%>
+<%if (i!==0){%>
+class="carousel-item section-1"
+<%}%>
+  >
+  <img src="<%=newcollection[i].img%>" loading="lazy" class="imgleft d-block w-100" alt="...">
+<h2> <%=newcollection[i].title%></h2>
+
+
+
+
+</div>
+<%}%>
+
+
+
+  <!--
              <div class="carousel-item section-1">
 
                      <div class="row" >
                        <div class="column ">
                          <img src="\images\albaradie.jpg" loading="lazy" class="imgleft d-block w-100" alt="...">
                          <!-- <img class="imgleft d-block" loading="lazy" src="\images\aboutusbackground.jpg" alt="Snow" style="width:100%"> -->
-                       </div>
+                       <!-- </div>
                        <div class="column">
-                 <h2> أحود أنواع خشب الزان </h2>
+                 <h2> Italic bedrooms</h2>
                  </div>
 
-                     </div>
+                     </div> --> -->
 
 
-                 </div>
-             <div class="carousel-item active section-1">
-               <img src="\images\albaradie.jpg"loading="lazy" class="imgleft d-block w-100" alt="...">
-             </div>
+                 <!-- </div> -->
+
+
+
+
+           </div>
+           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           </a>
+         </div>
+
+         <div class="zright">
+           <img class="zright" src="\images\zakharefright.png" alt="">
+
+         </div>
+
+         <div class="zleft">
+           <img src="\images\zakharefleft.png" alt="">
+
+         </div>
+       </section>
+
+
+       <section id="super">
+
+         <h1>Super</h1>
+
+         <div id="carouselExampleControls" class="carousel  slide carousel-fade" data-bs-ride="carousel">
+           <div class="carousel-inner">
+
+      <% for (var i=0;i<super2.length;i++) {%>
+      <div
+
+      <% if (i===0){%>
+      class="carousel-item active section-1" <%}%>
+      <%if (i!==0){%>
+      class="carousel-item section-1"
+      <%}%>
+      >
+      <img src="<%=super2[i].img%>" loading="lazy" class="imgleft d-block w-100" alt="...">
+      <h2> <%=super2[i].title%></h2>
+
+
+
+
+      </div>
+      <%}%>
+
+
+
+      <!--
              <div class="carousel-item section-1">
-               <img src="images/room.jpg" loading="lazy" class="imgleft d-block w-100" alt="...">
-             </div>
+
+                     <div class="row" >
+                       <div class="column ">
+                         <img src="\images\albaradie.jpg" loading="lazy" class="imgleft d-block w-100" alt="...">
+                         <!-- <img class="imgleft d-block" loading="lazy" src="\images\aboutusbackground.jpg" alt="Snow" style="width:100%"> -->
+                       <!-- </div>
+                       <div class="column">
+                 <h2> Italic bedrooms</h2>
+                 </div>
+
+                     </div> --> -->
+
+
+                 <!-- </div> -->
+
+
+
+
            </div>
            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,90 +219,58 @@
 
 
 
-       <section id="super">
-
-         <h1>Super</h1>
-         <div id="carouselExampleControls2" class="carousel  slide carousel-fade" data-bs-ride="carousel">
-           <div class="carousel-inner">
-             <div class="carousel-item section-1">
-
-                     <div class="row" >
-                       <div class="column ">
-                         <img class="imgleft d-block" loading="lazy" src="\images\aboutusbackground.jpg" alt="Snow" style="width:100%">
-                       </div>
-                       <div class="column1">
-                 <h1>
-                  أحود أنواع خشب الزان
-                طقم حفر + ثلاثية مفردة + ما بعرف شو المهم اني ازيد كلمات
-              </h1>
-
-       <a class="btn btn--white btn-lg"href="#super">  <span class="btn__text"><span style="color:white;">___  kajsnx</span></span></a>
-       <a class="btn btn--white " style="color:white" href="https://sprec.com/about/"><span class="btn__text"><span>About Us</span></span></a>
-                 </div>
-
-                     </div>
-
-
-                 </div>
-             <div class="carousel-item active section-1">
-               <img src="\images\albaradie.jpg" loading="lazy" class="imgleft d-block w-100" alt="...">
-             </div>
-             <div class="carousel-item section-1">
-               <img src="images/room.jpg"loading="lazy" class="imgleft d-block w-100" alt="...">
-             </div>
-           </div>
-           <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-           </a>
-           <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           </a>
-         </div>
-
-
-       </section>
-
 
 
 
 
        <div id ="more">
+
          <img src="\images\mountain.png" loading="lazy"style="margin:-100px;   opacity:0.8" alt="">
 
-       <div id="cnc">
-
-       <img class="cncimg" loading="lazy" src="\images\cnc.jpg" alt="">
-<div class="flexmore">
-  <h2>CNC..</h2>
-  <p>
-  را تارلااتلاتنلا تالانت رلاتلا رىةلاة ىرةلا ىرىة تار تارةى  رةلاى  رى اتر ار ار ا لاىنت ىتا ا تا ات تصاميم سي لن سي حلوة كتير وفاخرة ومدري مدري شو المهم انو تتعبى الصفحة حكي
-  </p>
-
-  <a href="bedrooms.html" class="u-btn u-button-style u-palette-3-base u-btn-1"> more</a>
 
 
+<% for (var i=0;i<highlights.length;i++){%>
+         <div id="<%=highlights[i].id%>" class="more2">
+
+         <img
+         <% if (i%2!==0){%>
+           class="leftimg"
+
+           <%}%>
+           <% if (i%2===0){%>
+             class="rightimg"
+
+             <%}%>
 
 
-</div>
+         loading="lazy" src="<%=highlights[i].img%>" alt="">
+        <div class="flexmore">
+        <h2><%=highlights[i].id.substring(2,highlights[i].id.length)  %> . .</h2>
+        <p>
+  <%=highlights[i].description%>
 
-       </div>
-       <hr>
-       <div id="cnc">
+        </p>
+        <a href="/<%=(highlights[i].id.substring(2,highlights[i].id.length)).replace(/\s/g, '');%>" type="submit"class="u-btn u-button-style u-palette-3-base u-btn-1"  > more</a>
 
-       <img class="bedrooms" loading="lazy" src="\images\cnc.jpg" alt="">
-<div class="flexmore">
-  <h2>CNC..</h2>
-  <p>
-    تصاميم سي لن سي حلوة كتير وفاخرة ومدري مدري شو المهم انو تتعبى الصفحة حكي
-  </p>
-  <a href="cnc.html" class="u-btn u-button-style u-palette-3-base u-btn-1"> more</a>
-</div>
+        </div>
 
 
 
 
 
-       </div>
+         </div>
+<% if (i!==highlights.length-1){%>
+  <hr>
+
+  <%}%>
+
+<%}%>
+
+
+
+
+
+
        <img src="\images\mountain.png" loading="lazy"style="margin:-100px;   opacity:0.8" alt="">
 
 
@@ -245,7 +312,16 @@
 <div id="communication">
 
 <div class="contactus">
-<h3>Contact us</h3>
+
+<a href="#"><i class="fab fa-instagram"></i>
+Instagram
+</a>
+
+<br>
+<a href="https://www.facebook.com/hamody.baradie/"><i class="fab fa-facebook"></i>
+Facebook
+</a>
+
 </div>
 
 <div class="sections">
