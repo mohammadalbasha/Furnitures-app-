@@ -46,14 +46,20 @@
             More
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#cnc">cnc</a>
-            <a class="dropdown-item" href="#">antiques</a>
+<% for (var i=0;i<highlights.length-1;i++){%>
+            <a class="dropdown-item" href="#<%=highlights[i].id.replace(/\s+/g, '')%>"><%=highlights[i].id.substring(2,highlights[i].id.length)  %> . .</a>
+<%}%>
+
+
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">STARAT</a>
+            <a class="dropdown-item" href="#<%=highlights[i].id.replace(/\s+/g, '')%>"><%=highlights[highlights.length-1].id.substring(2,highlights[highlights.length-1].id.length)  %> . .</a>
+
+
+
           </div>
         </li>
              <li class="nav-item">
-               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Buy Now!</a>
              </li>
            </ul>
 
@@ -105,7 +111,7 @@
 class="carousel-item section-1"
 <%}%>
   >
-  <img src="<%=newcollection[i].img%>" loading="lazy" class="imgleft d-block w-100" alt="...">
+  <img src="<%=newcollection[i].img%>" loading="lazy" class="imgleft  " alt="...">
 <h2> <%=newcollection[i].title%></h2>
 
 
@@ -173,7 +179,7 @@ class="carousel-item section-1"
       class="carousel-item section-1"
       <%}%>
       >
-      <img src="<%=super2[i].img%>" loading="lazy" class="imgleft d-block w-100" alt="...">
+      <img src="<%=super2[i].img%>" loading="lazy" class="imgleft " alt="...">
       <h2> <%=super2[i].title%></h2>
 
 
@@ -229,8 +235,9 @@ class="carousel-item section-1"
 
 
 
+
 <% for (var i=0;i<highlights.length;i++){%>
-         <div id="<%=highlights[i].id%>" class="more2">
+         <div id="<%=highlights[i].id.replace(/\s+/g, '');%>" class="more2">
 
          <img
          <% if (i%2!==0){%>
@@ -249,8 +256,10 @@ class="carousel-item section-1"
         <p>
   <%=highlights[i].description%>
 
-        </p>
-        <a href="/<%=(highlights[i].id.substring(2,highlights[i].id.length)).replace(/\s/g, '');%>" type="submit"class="u-btn u-button-style u-palette-3-base u-btn-1"  > more</a>
+      </p>
+
+
+        <a  href="/<%=highlights[i].id.replace(/\s+/g, '')%>" type="submit"class="u-btn u-button-style u-palette-3-base u-btn-1"> more</a>
 
         </div>
 
@@ -312,15 +321,26 @@ class="carousel-item section-1"
 <div id="communication">
 
 <div class="contactus">
+<h6 style="margin-top:10px;">Contact us</h6>
+<br>
+
+<i style="display:block ;margin:10px;" class="fas fa-phone"> +963944608803</i>
+
+
 
 <a href="#"><i class="fab fa-instagram"></i>
-Instagram
 </a>
 
-<br>
 <a href="https://www.facebook.com/hamody.baradie/"><i class="fab fa-facebook"></i>
-Facebook
 </a>
+
+<a href="https://wa.link/vja9vx">
+  <i class="fab fa-whatsapp"></i>
+
+
+</a>
+
+
 
 </div>
 

@@ -53,7 +53,6 @@ get_sections();
 get_super_and_new("super");
 get_super_and_new("newcollection");
 get_highlights();
-go();
 //
 
 
@@ -67,6 +66,9 @@ go();
 function go(){
   const express=require ("express");
   const app=express();
+  var bodyParser = require('body-parser')
+  app.use(bodyParser.urlencoded({ extended: false }))
+
   app.use(express.static('public'));
   app.use(express.static('public2'));
 
@@ -82,42 +84,55 @@ function go(){
   // console.log(sections[0].items.length);
 
 
-  app.get("/Livingrooms",function(req,res){
+//console.log(highlights[0].id+"skjdnckldcmkds");
+for (var i=0;i<highlights.length;i++){
+
+  app.get("/"+highlights[i].id.replace(/\s+/g, ''),function(req,res){
+
+console.log(req.url[1]);
   // res.sendFile("C:\\Users\\MSI\\baradie\\bedrooms.html");
   res.render("test2",{
-  sec:sections[1],
+
+
+  sec:sections[req.url[1]-1],
 
 
 
-})})
-
-  app.get("/CNC",function(req,res){
-  // res.sendFile("C:\\Users\\MSI\\baradie\\bedrooms.html");
-  res.render("test2",{
-  sec:sections[2],
-  })
-  // res.redirect("/bedrooms.html");
-
-  })
+})}
 
 
-app.get("/Others",function(req,res){
-// res.sendFile("C:\\Users\\MSI\\baradie\\bedrooms.html");
-res.render("test2",{
-sec:sections[3],
-})
-// res.redirect("/bedrooms.html");
 
-})
 
-app.get("/Saloons",function(req,res){
-// res.sendFile("C:\\Users\\MSI\\baradie\\bedrooms.html");
-res.render("test2",{
-sec:sections[0],
-})
-// res.redirect("/bedrooms.html");
 
-})
+)}
+//
+//   app.get("/CNC",function(req,res){
+//   // res.sendFile("C:\\Users\\MSI\\baradie\\bedrooms.html");
+//   res.render("test2",{
+//   sec:sections[2],
+//   })
+//   // res.redirect("/bedrooms.html");
+//
+//   })
+//
+//
+// app.get("/Others",function(req,res){
+// // res.sendFile("C:\\Users\\MSI\\baradie\\bedrooms.html");
+// res.render("test2",{
+// sec:sections[3],
+// })
+// // res.redirect("/bedrooms.html");
+//
+// })
+//
+// app.get("/Saloons",function(req,res){
+// // res.sendFile("C:\\Users\\MSI\\baradie\\bedrooms.html");
+// res.render("test2",{
+// sec:sections[0],
+// })
+// // res.redirect("/bedrooms.html");
+//
+// })
 }
 
 
@@ -232,8 +247,12 @@ console.log(image);
   console.log(highlights.length);
 
         })
+        go();
+
 
     })
+
+
 
 }
 
@@ -261,5 +280,11 @@ console.log("public2/"+x+"/"+file);
     })
 
 
+
+}
+
+
+function getid(){
+console.log("ksdnckjnsdckkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
 
 }
