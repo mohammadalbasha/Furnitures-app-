@@ -2,12 +2,13 @@
 
 
 class Item{
-constructor(model,quality,description,price,disaccount,images=[]){
+constructor(model,quality,description,price,disaccount,bonus,images=[]){
   this.model=model;
   this.quality=quality;
   this.description=description;
   this.price=price;
   this.disaccount=disaccount;
+  this.bonus=bonus;
   this.images=images;
 
 }}
@@ -165,6 +166,7 @@ function get_sections (){
   var price ;
   var disaccount;
   var quality;
+  var bonus;
   var fs2 = require('fs');
 
   var tempimages=[];
@@ -191,16 +193,18 @@ function get_sections (){
 
     try{
     description = fs2.readFileSync('public2/sections/'+typeofsection+'/'+model+'/الوصف.txt', 'UTF-8');
-     // var lines = description.split(/\r?\n/);
-     // lines.forEach((line) => {
-     //         console.log(line);
-     //    });
+    quality = fs2.readFileSync('public2/sections/'+typeofsection+'/'+model+'/الجودة.txt', 'UTF-8');
+    price = fs2.readFileSync('public2/sections/'+typeofsection+'/'+model+'/السعر.txt', 'UTF-8');
+    disaccount = fs2.readFileSync('public2/sections/'+typeofsection+'/'+model+'/الخصم.txt', 'UTF-8');
+    bonus = fs2.readFileSync('public2/sections/'+typeofsection+'/'+model+'/bonus.txt', 'UTF-8');
+
     }
     catch(err){
       console.log(error);
     }
-       console.log(images[0]);
-    items.push(new Item(model,description,description,description,description,images));
+       console.log(description+"1111111111111111111");
+       console.log(price+"2222222222222222");
+    items.push(new Item(model,quality,description,price,disaccount,bonus,images));
 
 
 
